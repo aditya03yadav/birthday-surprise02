@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#08050b">
+  <title>A Little Surprise ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <audio id="bgMusic" src="assets/music.mp3" loop preload="auto"></audio>
+
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <div class="stars" id="stars"></div>
+
+  <main>
+    <!-- SCREEN 1: INTRO -->
+    <section class="screen intro active" id="intro">
+      <div class="eyebrow">✦ A LITTLE SOMETHING FOR YOU ✦</div>
+      <div class="intro-heart">♥</div>
+      <h1>Hey, <span class="pink">Bebyyy❤️❤️❤️</span></h1>
+      <p class="subtext">
+        I made something special for you.<br>
+        Ready to see what's waiting inside?
+      </p>
+      <button class="glow-button" id="startBtn">
+        <span>Open Your Surprise</span><span>♡</span>
+      </button>
+      <p class="tiny-note">Best experienced with sound on 🎧</p>
+    </section>
+
+    <!-- SCREEN 2: CURTAIN -->
+    <section class="screen reveal-screen" id="reveal">
+      <div class="stage-lights">
+        <span></span><span></span><span></span>
+      </div>
+      <div class="curtains" id="curtains">
+        <div class="curtain curtain-left"></div>
+        <div class="curtain curtain-right"></div>
+      </div>
+      <div class="stage-content">
+        <p class="eyebrow">TONIGHT IS ALL ABOUT YOU</p>
+        <h2>Let the magic <span class="pink">begin.</span></h2>
+        <p>A little world made just for you.</p>
+        <button class="glow-button" id="revealBtn">Reveal the Surprise ✨</button>
+      </div>
+    </section>
+
+    <!-- SCREEN 3: BIRTHDAY WISH -->
+    <section class="screen birthday-screen" id="birthday">
+      <div class="confetti" id="confetti"></div>
+      <div class="birthday-card">
+        <div class="cake-emoji">🎂</div>
+        <p class="eyebrow">TODAY, YOU DESERVE THE WORLD</p>
+        <h1>Happy Birthday,<br><span class="pink">My Darling❤️ Ishuu!❤️</span></h1>
+        <p class="birthday-message">
+          May your smile stay bright, your heart stay happy,
+          and every little dream of yours come true.
+          You make ordinary days feel magical, and I hope
+          today gives you a thousand reasons to smile. ❤️
+        </p>
+        <div class="divider-heart">♥ ♥ ♥</div>
+        <button class="glow-button" id="memoriesBtn">Our Little Memories →</button>
+      </div>
+    </section>
+
+    <!-- SCREEN 4: PHOTO GALLERY -->
+    <section class="screen gallery-screen" id="gallery">
+      <p class="eyebrow">A FEW MOMENTS, A MILLION FEELINGS</p>
+      <h2>Little Pieces of <span class="pink">Us.</span></h2>
+      <p class="gallery-subtitle">Every picture holds a memory worth keeping. ❤️</p>
+
+      <div class="photo-grid">
+        <figure class="photo-card">
+          <img src="assets/photo1.jpg" alt="A favourite memory 1" loading="eager">
+          <figcaption>Memory No. 1 ♡</figcaption>
+        </figure>
+        <figure class="photo-card">
+          <img src="assets/photo2.jpg" alt="A favourite memory 2" loading="eager">
+          <figcaption>Memory No. 2 ♡</figcaption>
+        </figure>
+        <figure class="photo-card">
+          <img src="assets/photo3.jpg" alt="A favourite memory 3" loading="lazy">
+          <figcaption>Memory No. 3 ♡</figcaption>
+        </figure>
+        <figure class="photo-card">
+          <img src="assets/photo4.jpg" alt="A favourite memory 4" loading="lazy">
+          <figcaption>Memory No. 4 ♡</figcaption>
+        </figure>
+        <figure class="photo-card">
+          <img src="assets/photo5.jpg" alt="A favourite memory 5" loading="lazy">
+          <figcaption>Memory No. 5 ♡</figcaption>
+        </figure>
+        <figure class="photo-card">
+          <img src="assets/photo6.jpg" alt="A favourite memory 6" loading="lazy">
+          <figcaption>Memory No. 6 ♡</figcaption>
+        </figure>
+        <figure class="photo-card">
+          <img src="assets/photo7.jpg" alt="A favourite memory 7" loading="lazy">
+          <figcaption>Memory No. 7 ♡</figcaption>
+        </figure>
+        <figure class="photo-card">
+          <img src="assets/photo8.jpg" alt="A favourite memory 8" loading="lazy">
+          <figcaption>Memory No. 8 ♡</figcaption>
+        </figure>
+      </div>
+
+      <div class="gallery-footer">
+        <p>And if I could, I'd save every moment with you. 💗</p>
+        <button class="glow-button" id="finalBtn">One Last Thing… 💌</button>
+      </div>
+    </section>
+
+    <!-- SCREEN 5: FINAL MESSAGE -->
+    <section class="screen final-screen" id="final">
+      <div class="final-glow">♡</div>
+      <p class="eyebrow">FROM MY HEART TO YOURS</p>
+      <h1>You're <span class="pink">Special.</span></h1>
+      <div class="letter">
+        <p>Dear Birthday Bebyy,</p>
+        <p>
+          I hope this little surprise reminds you how much happiness
+          you bring into this world. You deserve kindness, laughter,
+          beautiful memories, and all the love your heart can hold.
+        </p>
+        <p>
+          No website could ever fit every feeling into words, but I
+          wanted to make something just for you — something you can
+          revisit whenever you need a little smile.
+        </p>
+        <p>Keep shining, keep smiling, and never forget how wonderful you are.</p>
+        <p class="signature">With lots of love, <span>♥</span></p>
+      </div>
+      <button class="glow-button" id="replayBtn">Relive the Magic ↻</button>
+      <p class="tiny-note">Made with love, just for you. 💖</p>
+    </section>
+  </main>
+
+  <div class="music-control" id="musicControl">
+    <button id="musicBtn" aria-label="Pause music" title="Pause or play music">♫</button>
+    <span id="musicLabel">Music on</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
